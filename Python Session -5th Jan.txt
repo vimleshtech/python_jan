@@ -1,0 +1,86 @@
+https://github.com/vimleshtech/python_jan
+==========================================
+
+Python Editor/Environment
+=============================
+-Python is open source 
+-Python is plateform independent
+-Python is indentation based programing language 
+
+Version:
+	3.7
+	3.6	***
+	3.x
+	3.4	**
+	..
+	2.7	** (linux)
+
+Editor:
+	-Python shell / Command line
+		>>>
+
+	-Python IDLE / GUI 
+		python code should be saved with .py/.pyw extension
+
+	-Other Editor
+		-VSCode		**
+		-VisualStudio
+		-Netbeans
+		-Eclipse
+		-Sublime
+		-Anoconda	**
+		-Spyder		
+		-PyCharm	**		
+		
+
+		
+-Python does allocate automatically
+	a =1 # int
+	a ="sksg" #str
+	a ='djuhfh' #str
+	
+-There are following types of datatype:
+int		: a =111
+float		: b =44333.3
+bool		: a =True / False
+str		: s ='sihsgs'  or  s ="sjjshfsfs"
+list		: a =[111,22,3,34,2,2,3,32,23,'sishss']
+		-list is mutable(chanable)
+tuple		: a =(111,22,3,3,32,2,2,3,'d')
+		-tuple is imutable(readonly)
+dict		: d ={1:'one','a':'alpha',101:[111,2,2,4,'fff']}
+			key:value 
+set		:  s ={'dove','lux','iphone','dove'}
+		-set contains unique value, 
+		-one dove will be removed automatically
+		
+	
+
+There are flowing inbuilt functions:
+	type(data/var)	: return data type
+	print()		: show/print data 
+	print(data/message,end='') # don;t change the line
+	input()		: read data from console /user
+			: default data type is string 
+			in python >= 3.0 version 
+			
+	
+	Python <3.0
+		input()  : read int
+		raw_input(): read string
+		print 'msg'
+		print('msg')
+		print msg,		#dont' change line
+	
+	
+How to install module(library) in python
+================================
+cd "C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\Scripts"
+
+
+
+pip install pandas
+			
+
+
+
