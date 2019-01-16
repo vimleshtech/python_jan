@@ -1,0 +1,166 @@
+Basic Syntax,  Variable and Data Types 
+Operator
+Conditional Statement: if, ifelse, nested if 
+Input & Output
+Loop/Iteration: for, while, nested loop
+
+Variable and Data Types 
+===========================
+int		: a =11
+float		: a =333.333
+str		: a ='sjswgfs' or a ="ssgfs"
+bool		: a = True / False 
+list		: a = [1111,2323233,344,44,'sgsghs']
+		-mutable 	
+tuple		: a =(111,2222,33,44,333,'333d')
+		-read only 
+dict		: key:json 
+		d ={'a':'alpha',1:'one',111:[11,222,33]}
+set 		:  s= {'iphone','dell','dell','iphone'}
+		-set contains values
+		-will will be renove 2nd dell 
+******
+Array 		
+DataFrame 
+******
+
+Operator
+=======================
+Arithmetic:
+	+
+	-
+	*	2*3    = 6
+	**	2**3   = 8
+	/	85/10  = 8.5
+	//	85//10 = 8
+	%	85%10  = 5	
+		
+Conditiional
+	>
+	>=
+	<
+	<=
+	!=
+	==
+	in		
+	not in 
+
+Assignment Operator:
+	=		a =1
+	+=		a+=10  or a =a+10
+	-=
+	*=
+	/=
+
+Logical:
+	and 
+	or
+
+Conditional Statement: if, ifelse, nested if 
+=============================================
+
+Input & Output (python 3.0 and +)
+================================
+input() : to read data from console(default data type is str)
+print(data/var) : print and chnage the line
+print(data,end='') : print and don't change line 
+
+type(data/var)  : return data type
+
+int(data/var) : convert to int
+str(data/var) : convert to str
+float(data/var) : convert to float
+
+
+Loop/Iteration: for, while, nested loop
+===========================================
+Types of loop:
+-while
+	-init
+	-condition
+	-incrementer/decrementer 
+
+-for 
+	
+=============================
+break and continue
+=============================
+break    : terminate the loop when condition 
+continue : skip the current iteratiion and resume next 
+
+================================
+list and it's operation
+================================ 
+l = [1111,222,333,3334444]
+-list index start from 0 
+-last index will be len - 1
+There are following inbuilt functions:
+len()	: return count of elements 
+max()	: return highest value
+min()	: return lowest value
+sum()	: return total
+sort()  : arrange data in acending order
+append() : add new element after last index
+pop()    : remove from last
+insert() : add new element at given position/index
+remove()  : find the existing value and remove that
+	  remove by value 
+slicer 
+	: return or remove list data by given index 
+	
+a = [111, 222, 33, 2, 1, 2]
+a[0]	 : return 1st element
+a[0:4]  : return 0 to 3rd element 
+a[:4]   : return 0 to 3rd element 
+a[-1]   : read last element(-1 read from right)
+a[:-1]  : read first to 2nd last
+a[:-2]  : read first to 3rd last
+
+a[::]   : read right to left 
+a[::-1] : read right to left , decrementer is -1
+a[::-2] : read right to left , decrementer is -2
+
+================================
+File Handling
+================================
+open(path,mode of the file)
+	path : physical path
+	mode of the file:
+		r -read
+		w -write (over wirte)
+		a -append
+		w+ -read and write
+		a+ - read and append
+
+
+read()	: read all conten from file
+readline() : read first line(line by line)
+readlines() : read all lines and store in list format
+	-every line of the file will one element of list
+write() : write the content to file
+
+close()	: save the close the file
+
+
+
+		
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
