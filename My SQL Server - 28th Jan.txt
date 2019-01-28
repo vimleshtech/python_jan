@@ -1,0 +1,163 @@
+FrontEnd : 
+	 -Python
+	 -Java
+	 -Android
+	 -.Net
+BackEnd   : DataBase 
+	  -My SQL Server    **
+	  -MS SQL Server
+	  -Oracle
+	  -SQLLite	  
+How to connect MySQL Server:
+	-> From console/command line
+	-> GUI - Tool
+	-> From web
+========================	
+SQL Commands:
+========================
+show databases;		--show list of  existing database
+create database <dbname>;  --create new database
+use <dbname>;		--switch database / change database 
+
+show tables;		--show list of existing tables
+
+create table <tblname>(id int, name varchar(100), salary int); 
+
+desc <tblname>;    		--show details of table
+
+
+insert into <tblname>(id,name,sal) values(1,'raman',33333);   --insert / save data 
+
+select * from <tblname>;  --show all data , * : show all columns
+
+select name,sal from <tblname>;   --show selected column
+
+select * from <tblname> where id >2;     --show selected rows/filter
+
+select name,sal <tblname> where id =1;		--show selected rows and columns 
+
+update <tblname>				--update name of selected rows
+set name ='new data'
+where id=1;
+
+
+delete from <tblname> where id =1;    --deleted selected rows
+
+delete from <tblname>;		--delete all rows 
+
+
+***************************  ****************
+--arange data in acending or descending order
+select * from <tblname> order by name asc;
+select * from <tblname> order by name ; --default is in ascending 
+select * from <tblname> order by name desc;
+
+select * from <tblname> order by id asc;
+select * from <tblname> order by sal desc;
+
+--group by : summarization of data 
+select name, count(*) from <tblname> group by name;
+select name, sum(sal) from <tblname> group by name;
+select name, max(sal) from <tblname> group by name;
+select name, min(sal) from <tblname> group by name;
+select name, avg(sal) from <tblname> group by name;
+
+select name, min(sal), max(sal), sum(sal), avg(sal) from <tblname> group by name;
+
+********************** merge or join the table*****************************
+
+employee
+	eid		1,2,3
+	name
+	gender
+	country
+
+salary
+	alpha		2,1,3
+	hra
+	da
+	
+
+
+out:
+	id  name   totalsal(hra+da)
+	-------------------------------------------
+
+
+
+Join: to merge two or more than two tables horizentally 
+	- at least one column must be same (logically) in both the tables 
+	
+There are following types:
+	-inner join   (default join / equal join)
+			-retrun common / matching rows 
+	-outer join / full outer join 	: return all rows from both tables 	
+	   -left join  / left outer join  : all rows left table and matching from right table
+				 or inner join + rest rows from left table 
+	   -right join / right outer join : all rows from right table and matching from left
+				
+			
+
+--inner join 
+
+select employee.eid, employee.name , salary.hra+ salary.da  as total_sal 
+from employee inner join salary 
+	on  employee.eid  = salary.id 
+
+select e.eid, e.name, s.hra+s.da as total
+from employee as e inner join salary as s
+	on  e.eid  = s.id ;
+
+
+--left join
+select e.eid, e.name, s.hra+s.da as total
+from employee as e left join salary as s
+	on  e.eid  = s.id ;
+
+
+---right join 
+select e.eid, e.name, s.hra+s.da as total
+from employee as e right join salary as s
+	on  e.eid  = s.id ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
