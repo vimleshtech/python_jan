@@ -1,0 +1,57 @@
+import requests
+#pip install bs4
+from bs4 import BeautifulSoup
+     
+
+o = requests.get("http://yahoo.com/")
+print(o)
+
+print(o.status_code) # 200 : success, 404 : not found
+
+print(o.headers)
+print(o.links)
+print(o.url)
+#print(o.text)
+
+out = o.content #page source code
+a = BeautifulSoup(out,'html.parser') #convert response to html
+
+for e in a.find_all('a', href=True):
+     print(e['href'])
+
+
+
+###amazon
+o = requests.get("https://www.amazon.in/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=iphone")
+
+out = o.content #page source code
+a = BeautifulSoup(out,'html.parser') #convert response to html
+
+for e in a.find_all('a'):
+     print (e.getText)
+     
+                    
+     
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
